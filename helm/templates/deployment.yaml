@@ -29,7 +29,7 @@ spec:
 {{ toYaml .Values.resources | indent 10 }}
         env:
         - name: ALWAYS_UPDATE_ON_START
-          value: {{ .Values.config.alwaysUpdateOnStart | toString }}
+          value: {{ .Values.config.alwaysUpdateOnStart }}
         ports:
         - name: game-port
           containerPort: {{ .Values.config.gamePort | int }}
