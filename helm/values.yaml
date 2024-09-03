@@ -16,9 +16,9 @@ volumes:
   gamePVC:
     size: 50Gi
   steamcmdPVC:
-    size: 50gi
+    size: 50Gi
   winePVC:
-    size: 50gi
+    size: 50Gi
   storageClassName: ""
 
 config:
