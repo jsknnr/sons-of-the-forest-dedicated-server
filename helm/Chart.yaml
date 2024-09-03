@@ -1,0 +1,8 @@
+apiVersion: v1
+name: sons-of-the-forest-server
+version: 1.0.0
+description: Sons of the Forest dedicated server.
+keywords:
+- game
+- server
+home: https://github.com/jsknnr/sons-of-the-forest-dedicated-server

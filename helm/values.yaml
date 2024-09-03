@@ -1,0 +1,28 @@
+image:
+  repository: jammsen/sons-of-the-forest-dedicated-server
+  tag: latest
+
+service:
+  type: LoadBalancer
+  externalIPs: []
+  annotations: {}
+
+resources:
+  requests:
+    memory: 16G
+    cpu: 6.0
+
+volumes:
+  gamePVC:
+    size: 50Gi
+  steamcmdPVC:
+    size: 50gi
+  winePVC:
+    size: 50gi
+  storageClassName: ""
+
+config:
+  gamePort: "8766"
+  queryPort: "27016"
+  blobSyncPort: "9700"
+  alwaysUpdateOnStart: "1"
