@@ -44,9 +44,9 @@ spec:
         - name: game
           mountPath: /sonsoftheforest
         - name: steamcmd
-          mountpath: /steamcmd
+          mountPath: /steamcmd
         - name: wine
-          mountpath: /winedata
+          mountPath: /winedata
         securityContext:
           allowPrivilegeEscalation: false
       volumes:
